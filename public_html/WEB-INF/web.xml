@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <servlet>
+        <servlet-name>Munt</servlet-name>
+        <servlet-class>munt.MUnt</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RefreshFS</servlet-name>
+        <servlet-class>munt.RefreshFS</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RefreshSys</servlet-name>
+        <servlet-class>munt.RefreshSys</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GpioAction</servlet-name>
+        <servlet-class>munt.GpioAction</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServiceCntl</servlet-name>
+        <servlet-class>munt.ServerControl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ChgPwd</servlet-name>
+        <servlet-class>munt.ChgPwd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChgPwd</servlet-name>
+        <url-pattern>/chgpwd</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServiceCntl</servlet-name>
+        <url-pattern>/srvctl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GpioAction</servlet-name>
+        <url-pattern>/gpioact</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RefreshSys</servlet-name>
+        <url-pattern>/rfrshsys</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RefreshFS</servlet-name>
+        <url-pattern>/rfrshfs</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Munt</servlet-name>
+        <url-pattern>/munt</url-pattern>
+    </servlet-mapping> 
+</web-app>
